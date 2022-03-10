@@ -1,0 +1,311 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+:root
+{
+    --primary-color: #047aed;
+}
+body{
+    background: #047aed;
+}
+.container
+{
+    border: 1px solid black;
+    margin-top: 90px;
+    margin-left: 200px;
+    width: 200px;
+   
+    padding: 40px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 3px 4px 7px grey;
+}
+
+/*Header style*/
+
+.header
+{
+    width: 100%;
+}
+
+#head{
+
+   margin-top: -10px;
+   margin-left: 60px;
+   margin-bottom: 10px;
+   font-weight: bolder;
+   font-size: larger;
+   text-shadow: 3px 1px 2px rgb(240, 240, 240);
+}
+
+/*inputs style*/
+
+#binary, #decimal, #octal, #hexa
+{
+    width: 80%;
+    font-size: 13px;
+    margin-bottom: 25px;
+    padding: 7px;
+    border: 0;
+    border-bottom: 1px solid rgb(141, 138, 138);
+    transition: all ease 300ms;
+    -webkit-transition: all ease 300ms;
+}
+
+#binary:focus
+{
+    outline: none;
+    border-bottom: 1px solid rgb(0, 183, 255);
+}
+#decimal:focus
+{
+    outline: none;
+    border-bottom: 1px solid rgb(0, 212, 131);
+}
+
+#octal:focus
+{
+    outline: none;
+    border-bottom: 1px solid rgb(39, 0, 212);
+}
+#hexa:focus
+{
+    outline: none;
+    border-bottom: 1px solid rgb(175, 2, 132);
+}
+/*notification*/
+
+.notify
+{
+    border: 0;
+    width:200px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding: 0;
+}
+
+#calc
+{
+    margin-left: 10px;
+    font-size: 18px;
+    padding: 0;
+}
+
+/*the button*/
+
+.button
+{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.btn
+{
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    cursor: pointer;
+    border: 0;
+    width: 60%;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+    transition: all ease 200ms;
+    -webkit-transition: all ease 200ms;
+    border-bottom: 1px #fff solid;
+    
+}
+
+#btn2
+{
+    margin-left: 20px;
+    width: 122px;
+}
+
+#btn2:active
+{
+    color: red;
+}
+
+.btn:hover{
+    border-bottom: 1px rgb(145, 43, 7) solid;
+    transform: scale(1.1);
+    color:#582643;
+    box-shadow:1px 2px 2px grey;
+    font-weight:normal;
+}
+
+.btn:active
+{
+    color: rgb(13, 136, 64);
+}
+/*circle*/
+
+.fas
+{
+    color:grey;
+    font-size: 14px;
+    animation-name: animate;
+    animation-duration:2s;
+    animation-iteration-count:unset;
+}
+
+@keyframes animate {
+    0% { transform: rotate( 0.0deg); color: #ffffff; }
+   10% { transform: rotate(20.0deg) ;color: #b9c4cc;}  /* The following five values can be played with to make the waving more or less extreme */
+   15% { transform: rotate(40.0deg) }
+   20% { transform: rotate(60.0deg) }
+   25% { transform: rotate(80.0deg) ; color: #7e8183;}
+   30% { transform: rotate(100.0deg) }
+   35% { transform: rotate(120.0deg) }  /* Reset for the last half to pause */
+   40% { transform: rotate(130.0deg) }
+   45% { transform: rotate(140.0deg);color: #484b4d;}
+   50% { transform: rotate(150.0deg) }
+   55% { transform: rotate(160.0deg) }
+   60% { transform: rotate(170.0deg) }
+   65% { transform: rotate(190.0deg) ;color: #242525;}
+   70% { transform: rotate(200.0deg) }
+   75% { transform: rotate(230.0deg) }
+   80% { transform: rotate(260.0deg) }
+   85% { transform: rotate(300.0deg) }
+   90% { transform: rotate(320.0deg) }
+   95% { transform: rotate(340.0deg) }
+   100% { transform: rotate(360.0deg);}
+
+}
+
+/*warning*/
+
+.warn
+{
+    margin-left: 30%;
+    margin-top: 5px;
+}
+/*smaller screen*/
+
+@media only screen and (min-width: 500px)
+{
+    .container{
+ 
+        margin-left: 150px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px black;
+    }
+    body{
+        background: #054a8f;
+    }
+
+    .warn
+    {
+        margin-left: 10%;
+    }
+}
+@media only screen and (max-width: 490px)
+{
+    .container{
+        margin-left: 50px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px black;
+    }
+ 
+}
+/*tab version*/
+
+@media only screen and (min-width: 550px)
+{
+    .container{
+        width: 450px;
+        border: 1px solid black;
+        margin-top: 90px;
+        margin-left: 110px;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 5px 10px 3px black;
+    }
+    body{
+        background: #03284e;
+    }
+   
+
+    /*Header style*/
+
+    #head{
+
+        margin-top: -10px;
+        margin-left: 200px;
+        margin-bottom: 20px;
+        text-shadow: 3px 2px 2px rgb(240, 240, 240);
+    }
+
+    /*inputs style*/
+
+    #binary, #decimal, #octal, #hexa
+    {
+        width: 90%;
+        font-size: 17px;
+    }
+
+   /*button style*/
+
+    .button{
+        margin-left: 125px;
+    }
+    .btn
+    {
+        font-size: 15px;
+        margin-bottom: 0;
+        border: 0;
+        border-bottom: 1px #fff solid;
+        width: 40%;
+    }
+
+    /*notification*/
+
+    .notify
+    {
+        margin-top: 10px;
+        margin-left: 150px;
+      
+    }
+
+    .fas
+    {
+        font-size: 18px;
+  
+    }   
+    .warn
+    {
+        margin-left: 30%;
+
+    }
+
+}
+@media only screen and (min-width: 750px)
+{
+    .container{
+        margin-left: 250px;
+    }
+}
+@media only screen and (min-width : 1000px)
+{
+    .container
+    {
+        margin-left: 400px;
+        margin-top: 150px;
+        border-radius: 20px;
+    }
+    #binary , #decimal, #octal, #hexa
+    {
+        width: 98%;
+    }
+    .btn:hover
+    {
+        font-weight: normal;
+    }
+    body{
+        background: #021931;
+    }
+}
